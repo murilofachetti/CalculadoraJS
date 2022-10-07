@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: #3a3b5e;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #131313;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    user-select: none;
+}
+
+#displayArea {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.116);
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+#displayArea #currentValue{
+    text-align: right;
+    font-size: 32px;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+#displayArea #answerScreen{
+    text-align: right;
+    color: rgba(150, 150, 150, 0.87);
+    font-size: 24px;
+    word-wrap: break-word;
+}
+
+#keypadBtns {
+    display: flex;
+    flex-direction: column;
+}
+
+#keypadBtns .btnsRow{
+    display: flex;
+    flex-direction: row;
+}
+
+#keypadBtns .btnsRow button {
+    background: #232534;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+#keypadBtns .btnsRow button:hover{
+    cursor: pointer;
+}
+
+#keypadBtns .btnsRow button.fun_btn {
+    background: #00e6f6;
+}
+
+#keypadBtns .btnsRow button.num_btn {
+    color: #fff;
+}
+
+#keypadBtns .btnsRow button.fun_btn:hover, #keypadBtns .btnsRow button.fun_btn:active {
+    background: #00c6d4;
+}
+
+#keypadBtns .btnsRow button.num_btn:hover, #keypadBtns .btnsRow button.num_btn:active {
+    background: #282a3a;
+}
